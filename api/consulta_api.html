@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inventario de Almacén</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+</head>
+<body>
+    
+    <main class="container" style="margin-top: 2rem;">
+        
+        <article>
+            <header>
+                <h2 style="margin-bottom: 0;">Resgistro de Almacén</h2>
+            </header>
+            
+            <form id="formulario">
+                <input type="hidden" id="id">
+                
+                <div class="grid">
+                    <label for="nombre">
+                        Nombre del artículo
+                        <input type="text" id="nombre" placeholder="Ej. Llave Inglesa" required>
+                    </label>
+                    
+                    <label for="cantidad">
+                        Cantidad en stock
+                        <input type="number" id="cantidad" placeholder="0" required>
+                    </label>
+                </div>
+                
+                <button type="submit">Guardar Registro</button>
+            </form>
+        </article>
+        <figure>
+            <table class="striped">
+                <thead>
+                    <tr>
+                        <th scope="col">ID</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Cantidad</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-datos">
+                </tbody>
+            </table>
+        </figure>
+
+    </main>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
