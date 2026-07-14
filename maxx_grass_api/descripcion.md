@@ -7,12 +7,13 @@ Este proyecto inicializa automáticamente una base de datos de lista del persona
    npm install
 2. **Pruebas**:
 Enlace para visualizar la lista completa de empleados: GET
-http://localhost:3000/api/empleados/ 
+```bash
+http://localhost:4000/api/empleados/ 
 
 Enlace para obtener datos de empleado segun su numero de documento: GET
 /api/empleados/ (numero de documento ) ejemplo: 
-
-http://localhost:3000/api/empleados/69875437
+```bash
+http://localhost:4000/api/empleados/69875437
 
 Metodo para agregar un nuevo empleado : POST
 
